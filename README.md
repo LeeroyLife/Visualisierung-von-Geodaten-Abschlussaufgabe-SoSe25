@@ -19,7 +19,7 @@ Kontakt: lele5111@bht-berlin.de<br>
 [EP.09 3D-Gebäudemodelle](#ep09-3d-gebäudemodelle)<br>
 
 ## EP.01 Dasymetrische Choroplethenkarte
-![image]()
+![image](C:\Users\Leero\OneDrive\Desktop\BHT\DTM\Fertig)
 ## EP.02 Gitterchoroplethenkarte
 
 ## EP.03 Punktrasterkarte

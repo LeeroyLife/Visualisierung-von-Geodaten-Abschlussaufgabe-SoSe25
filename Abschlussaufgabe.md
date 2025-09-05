@@ -34,5 +34,5 @@ Kontakt: lele5111@bht-berlin.de<br>
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.07.gif)
 ## EP.08 Animationen in QGIS
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.08_Leffke_meteor%20shower.png)
-## EP.09 2.5D-Gebäudemodelle
+## EP.09 3D-Gebäudemodelle
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.09_Leffke.png)

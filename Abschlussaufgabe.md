@@ -25,7 +25,7 @@ Kontakt: lele5111@bht-berlin.de<br>
 ## EP.03 Punktrasterkarte
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.03_Leffke.jpg)
 ## EP.04 Value-by-alpha Mapping
-
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.04_Leffke.jpg)
 ## EP.05 Tilemaps
 
 ## EP.06 Flowmaps

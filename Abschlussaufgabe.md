@@ -16,7 +16,7 @@ Kontakt: lele5111@bht-berlin.de<br>
 [EP.06 Flowmaps](#ep06-flowmaps)<br>
 [EP.07 Mesh-Daten](#ep07-mesh-daten)<br>
 [EP.08 Animationen in QGIS](#ep08-animationen-in-qgis)<br>
-[EP.09 2.5D-Gebäudemodelle](#ep09-2.5d-gebäudemodelle)<br>
+[EP.09 3D-Gebäudemodelle](#ep09-3d-gebäudemodelle)<br>
 
 ## EP.01 Dasymetrische Choroplethenkarte
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.01.jpg)

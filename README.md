@@ -20,3 +20,28 @@ Kontakt: lele5111@bht-berlin.de<br>
 <br>
 <br>
 **EP.01 Dasymetrische Choroplethenkarte**
+<br>
+<br>
+**EP.02 Gitterchoroplethenkarte**
+<br>
+<br>
+**EP.03 Punktrasterkarte**
+<br>
+<br>
+**EP.04 Value-by-alpha Mapping**
+<br>
+<br>
+**EP.05 Tilemaps**
+<br>
+<br>
+**EP.06 Flowmaps**
+<br>
+<br>
+**EP.07 Mesh-Daten**
+<br>
+<br>
+**EP.08 Animationen in QGIS**
+<br>
+<br>
+**EP.09 3D-Gebäudemodelle**
+

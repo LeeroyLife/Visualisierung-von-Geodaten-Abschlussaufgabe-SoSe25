@@ -23,7 +23,7 @@ Kontakt: lele5111@bht-berlin.de<br>
 ## EP.02 Gitterchoroplethenkarte
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.02_Leffke_Kirschbl%C3%BCtenb%C3%A4ume.jpeg)
 ## EP.03 Punktrasterkarte
-
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.03_Leffke.jpg)
 ## EP.04 Value-by-alpha Mapping
 
 ## EP.05 Tilemaps

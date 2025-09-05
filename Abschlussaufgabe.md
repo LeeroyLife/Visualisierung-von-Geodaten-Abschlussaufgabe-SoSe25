@@ -29,7 +29,7 @@ Kontakt: lele5111@bht-berlin.de<br>
 ## EP.05 Tilemaps
 
 ## EP.06 Flowmaps
-
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.06.png)
 ## EP.07 Mesh-Daten
 
 ## EP.08 Animationen in QGIS

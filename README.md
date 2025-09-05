@@ -19,7 +19,7 @@ Kontakt: lele5111@bht-berlin.de<br>
 [EP.09 3D-Gebäudemodelle](#ep09-3d-gebäudemodelle)<br>
 
 ## EP.01 Dasymetrische Choroplethenkarte
-![image]([EP.01.jpg](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.01.jpg))
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.01.jpg)
 ## EP.02 Gitterchoroplethenkarte
 
 ## EP.03 Punktrasterkarte

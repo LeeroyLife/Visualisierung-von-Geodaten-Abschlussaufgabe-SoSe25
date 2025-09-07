@@ -19,20 +19,72 @@ Kontakt: lele5111@bht-berlin.de<br>
 [EP.09 3D-Gebäudemodelle](#ep09-3d-gebäudemodelle)<br>
 
 ## EP.01 Dasymetrische Choroplethenkarte
-![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.01.jpg)
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.01.jpg)<br>
+<br>
+**Arbeitsschritte**<br>
+<br>
+**Vorteile der Methode**<br>
+<br>
+Die dasymetrische Choroplethenkarte stellt die Bevölkerung deutlich realistischer dar, da sie die Bevölkerung nur auf tatsächlich bebaute und bewohnte Flächen verteilt. Dadurch entstehen klarere Dichte-Hotspots, etwa in Mitte, Friedrichshain oder Marzahn, während unbewohnte Gebiete wie der Grunewald oder das Tempelhofer Feld korrekt ausgeklammert werden. Im Gegensatz zur einfachen Choroplethenkarte vermeidet sie so Verzerrungen durch große, ungenutzte Flächen und ermöglicht eine bessere Vergleichbarkeit zwischen Stadtteilen wie Wedding und Köpenick. Diese realitätsnahe Darstellung bietet besonders für Stadtplanung, Wohnraumanalyse und Infrastrukturentscheidungen eine deutlich höhere Aussagekraft.<br>
+<br>
+**Nachteile der Methode**<br>
+<br>
+Trotz ihrer höheren Genauigkeit ist die dasymetrische Choroplethenkarte aufwändiger in der Erstellung, da sie zusätzliche Daten wie Bebauung, Landnutzung oder Satellitenbilder benötigt. Die Abgrenzung bewohnter Flächen ist nicht immer eindeutig und kann je nach Datenbasis variieren. Dadurch entsteht ein höherer Interpretationsspielraum, der Vergleiche erschweren kann. Zudem ist die Methode komplexer und weniger intuitiv lesbar als klassische Karten, da sie sich nicht an bekannten Verwaltungsgrenzen orientiert.
 ## EP.02 Gitterchoroplethenkarte
-![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.02_Leffke_Kirschbl%C3%BCtenb%C3%A4ume.jpeg)
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.02_Leffke_Kirschbl%C3%BCtenb%C3%A4ume.jpeg)<br>
+<br>
+**Arbeitsschritte**<br>
+<br>
+**Vorteile der Methode**<br>
+<br>
+**Nachteile der Methode**<br>
 ## EP.03 Punktrasterkarte
-![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.03_Leffke.jpg)
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.03_Leffke.jpg)<br>
+<br>
+**Arbeitsschritte**<br>
+<br>
+**Vorteile der Methode**<br>
+<br>
+**Nachteile der Methode**<br>
 ## EP.04 Value-by-alpha Mapping
-![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.04_Leffke.jpg)
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.04_Leffke.jpg)<br>
+<br>
+**Arbeitsschritte**<br>
+<br>
+**Vorteile der Methode**<br>
+<br>
+**Nachteile der Methode**<br>
 ## EP.05 Tilemaps
 
 ## EP.06 Flowmaps
-![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.06.png)
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.06.png)<br>
+<br>
+**Arbeitsschritte**<br>
+<br>
+**Vorteile der Methode**<br>
+<br>
+**Nachteile der Methode**<br>
 ## EP.07 Mesh-Daten
-![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.07.gif)
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.07.gif)<br>
+<br>
+**Arbeitsschritte**<br>
+<br>
+**Vorteile der Methode**<br>
+<br>
+**Nachteile der Methode**<br>
 ## EP.08 Animationen in QGIS
-![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.08_Leffke_meteor%20shower.png)
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.08_Leffke_meteor%20shower.png)<br>
+<br>
+**Arbeitsschritte**<br>
+<br>
+**Vorteile der Methode**<br>
+<br>
+**Nachteile der Methode**<br>
 ## EP.09 3D-Gebäudemodelle
-![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.09_Leffke.png)
+![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.09_Leffke.png)<br>
+<br>
+**Arbeitsschritte**<br>
+<br>
+**Vorteile der Methode**<br>
+<br>
+**Nachteile der Methode**<br>

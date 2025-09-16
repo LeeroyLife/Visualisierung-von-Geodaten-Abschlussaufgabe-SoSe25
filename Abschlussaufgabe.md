@@ -53,10 +53,35 @@ Trotz ihrer höheren Genauigkeit ist die dasymetrische Choroplethenkarte aufwän
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.02_Leffke_Kirschbl%C3%BCtenb%C3%A4ume.jpeg)<br>
 <br>
 **Arbeitsschritte**<br>
-<br>
+1. Datenbeschaffung<br>
+•	Bezirksgrenzen und Kirschbaumdaten (z. B. vom FIS-Broker oder Geoportal Berlin) und in QGIS laden<br>
+2. Hexagon-Gitter erstellen<br>
+Menü: Vektor → Recherchewerkzeuge → Gitter erzeugen<br>
+• Typ: Hexagon (Polygone)<br>
+• Ausdehnung: Bezirksgrenzen<br>
+• Seitenlänge: 500 m<br>
+• Horizontaler & vertikaler Abstand: 866,025 m<br>
+3. Gitter auf Berlin begrenzen<br>
+•	Verschneidung mit Bezirksfläche, damit nur Zellen in Berlin bleiben<br>
+4. Punkte zählen<br>
+Menü: Verarbeitung → Werkzeugkiste → „Attribute nach Position verknüpfen”<br>
+•	Ziel: Hexagon-Gitter<br>
+•	Join: Kirschbaum-Punkte<br>
+•	Ergebnis: Anzahl Bäume pro Zelle<br>
+5. Darstellung<br>
+•	Symbolisierung: Abgestuft nach Baumanzahl<br>
+•	Farbverlauf: Weiß (wenig) nach Rot (viel)<br>
+•	Klassen: 5 Klassen nach Jenks<br>
+6. Drucklayout<br>
+•	Karte, Titel, Legende, Maßstab, Nordpfeil, Quellen & Name einfügen<br>
+
 **Vorteile der Methode**<br>
 <br>
+Die Gitterchoroplethenkarte bietet eine gleichmäßige Flächenaufteilung, da jedes Rasterelement, wie in diesem Fall ein Hexagon, dieselbe Größe hat. Dadurch lassen sich räumliche Verteilungen objektiver und besser vergleichen. Verzerrungen durch unterschiedlich große Verwaltungsgrenzen, wie sie bei klassischen Choroplethenkarten auftreten, werden vermieden. Besonders gut eignet sich diese Methode für punktbezogene Daten, da sich räumliche Muster, Häufungen oder Cluster deutlich erkennen lassen. Außerdem sorgt das Gitter für eine gewisse Anonymisierung, da keine exakten Adressen oder administrative Einteilungen sichtbar sind.<br>
+
 **Nachteile der Methode**<br>
+<br>
+Ein Nachteil der Gitterchoroplethenkarte ist, dass die genaue Lage einzelner Objekte durch die Aggregation auf Rasterzellen verloren geht. Wie groß die Gitter sind, spielt eine große Rolle: Bei zu großen Gittern fehlen Details, bei zu kleinen wird die Karte unübersichtlich. Zudem sind die Rasterzellen künstlich und folgen keinen bestehenden Verwaltungsgrenzen, was die Aussagekraft in politischen oder administrativen Kontexten einschränkt. Auch die Datenverarbeitung ist etwas aufwendiger, da die punktuellen Daten zunächst in die Gitterstruktur überführt werden müssen.
 ## EP.03 Punktrasterkarte
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.03_Leffke.jpg)<br>
 <br>

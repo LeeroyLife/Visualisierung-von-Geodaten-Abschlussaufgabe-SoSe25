@@ -86,7 +86,24 @@ Ein Nachteil der Gitterchoroplethenkarte ist, dass die genaue Lage einzelner Obj
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.03_Leffke.jpg)<br>
 <br>
 **Arbeitsschritte**<br>
-<br>
+
+1. Daten herunterladen und Importieren<br>
+•	Airbnb-Daten (von InsideAirbnb) als CSV-Datei herunterladen<br>
+•	Fehlerhafte oder fehlende Werte entfernen (z. B. NULL-Preise)<br>
+•	CSV als Punktdaten importieren und nach Objektart gruppieren (Entire Room, Private Room, Shared Room, Hotel Room)<br>
+2. Raster erzeugen und zuschneiden<br> 
+•	Gleichmäßiges Raster über das Stadtgebiet erzeugen (Vektor → Recherchewerkzeuge → Gitter)<br>
+•	Verschneide das Raster mit der Stadtfläche, damit nur Felder innerhalb der Stadt bleiben<br>
+4. Punktdaten laden und zählen<br>
+•	Airbnb-Punkte (z. B. nach Unterkunftstyp gefiltert) in QGIS laden<br>
+•	Unterkünfte je Typ in jeder Rasterzelle zählen (Menü: Verarbeitung → Werkzeugkiste → „Attribute nach Position verknüpfen”)<br>
+5. Visualisierung<br>
+In jede Zelle kommt ein Punkt je Objektart (zusätzlich den Durchschnittspreis pro Kategorie berechnen):<br>
+•	Punktfarbe = Anzahl der Objekte<br>
+•	Punktgröße = Durchschnittspreis<br>
+6. Drucklayout erstellen<br>
+•	Karte, Titel, Legende, Maßstab, Nordpfeil, Quellenangabe, Name<br>
+
 **Vorteile der Methode**<br>
 <br>
 Die Punktrasterkarte ist besonders gut geeignet, um räumliche Verteilungen und Häufungen sichtbar zu machen. Jeder Punkt steht für eine bestimmte Anzahl von Objekten, was die Darstellung sehr anschaulich und leicht verständlich macht. Gerade bei größeren Datenmengen lässt sich so schnell erkennen, wo sich Schwerpunkte oder Cluster bilden, zum Beispiel eine hohe Dichte an Airbnb-Angeboten im Berliner Stadtzentrum. Die Methode ist unabhängig von administrativen Grenzen, wodurch alle Flächen gleich behandelt werden. Dadurch eignet sich die Karte gut für vergleichende raumanalytische Darstellungen.<br>

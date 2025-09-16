@@ -22,7 +22,27 @@ Kontakt: lele5111@bht-berlin.de<br>
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.01.jpg)<br>
 <br>
 **Arbeitsschritte**<br>
-<br>
+1. Datenbeschaffung<br>
+•	LOR-Shapefile (Planungsräume Berlin)<br>
+•	Einwohnerzahlen (CSV, Stand 01/2023)<br>
+•	CLC-Daten (Corine Land Cover – für bebaute Flächen)<br>
+2. Daten vorbereiten<br>
+•	CSV in Excel aufräumen (Spalten, Zahlenformate)<br>
+•	In QGIS laden und CSV mit Shapefile verknüpfen (Join über PLR-Nummer)<br>
+3. Einfache Choroplethenkarte<br>
+•	Bevölkerungsdichte berechnen:<br>
+Einwohner / ($area / 10000)<br>
+•	Jenks-Klassifizierung (5 Klassen), Farbschema wählen<br>
+4. Dasymetrische Karte erstellen<br>
+•	CLC-Daten filtern: Nur bebaute Flächen (Codes 111 + 112)<br>
+•	Bebaute Fläche zusammenfassen (Geometrie auflösen)<br>
+•	Mit LOR-Flächen verschneiden (bebaute Teilflächen pro Planungsraum)<br>
+•	Neue Fläche und Dichte berechnen für die bewohnten Flächen<br>
+•	Unbebaute Flächen grau, bebaute Flächen farbig nach Dichte<br>
+5. Karte gestalten<br>
+•	Beide Karten nebeneinander platzieren<br>
+•	Titel, Legende, Maßstab, Nordpfeil, Quellen, Name ergänzen<br>
+
 **Vorteile der Methode**<br>
 <br>
 Die dasymetrische Choroplethenkarte stellt die Bevölkerung deutlich realistischer dar, da sie die Bevölkerung nur auf tatsächlich bebaute und bewohnte Flächen verteilt. Dadurch entstehen klarere Dichte-Hotspots, etwa in Mitte, Friedrichshain oder Marzahn, während unbewohnte Gebiete wie der Grunewald oder das Tempelhofer Feld korrekt ausgeklammert werden. Im Gegensatz zur einfachen Choroplethenkarte vermeidet sie so Verzerrungen durch große, ungenutzte Flächen und ermöglicht eine bessere Vergleichbarkeit zwischen Stadtteilen wie Wedding und Köpenick. Diese realitätsnahe Darstellung bietet besonders für Stadtplanung, Wohnraumanalyse und Infrastrukturentscheidungen eine deutlich höhere Aussagekraft.<br>

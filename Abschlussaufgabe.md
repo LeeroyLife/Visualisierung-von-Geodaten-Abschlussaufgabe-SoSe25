@@ -89,7 +89,11 @@ Ein Nachteil der Gitterchoroplethenkarte ist, dass die genaue Lage einzelner Obj
 <br>
 **Vorteile der Methode**<br>
 <br>
+Die Punktrasterkarte ist besonders gut geeignet, um räumliche Verteilungen und Häufungen sichtbar zu machen. Jeder Punkt steht für eine bestimmte Anzahl von Objekten, was die Darstellung sehr anschaulich und leicht verständlich macht. Gerade bei größeren Datenmengen lässt sich so schnell erkennen, wo sich Schwerpunkte oder Cluster bilden, zum Beispiel eine hohe Dichte an Airbnb-Angeboten im Berliner Stadtzentrum. Die Methode ist unabhängig von administrativen Grenzen, wodurch alle Flächen gleich behandelt werden. Dadurch eignet sich die Karte gut für vergleichende raumanalytische Darstellungen.<br>
+
 **Nachteile der Methode**<br>
+<br>
+Ein Nachteil der Punktrasterkarte ist, dass die einzelnen Punkte keine echten Standorte darstellen, sondern zufällig innerhalb eines Rasters platziert werden. Dadurch geht die genaue Lage verloren. Zudem zeigt die Karte nur die Verteilung und nicht exakte Werte pro Gebiet. In sehr dicht besiedelten Bereichen kann die Darstellung schnell überladen und unübersichtlich wirken. Auch die Wahl der Rastergröße spielt eine große Rolle: Ist das Raster zu groß, werden Details verschluckt. Ist das Raster zu klein, wird die Karte schwer lesbar. Insgesamt eignet sich die Methode eher zur Darstellung von Mustern als für genaue Analysen.
 ## EP.04 Value-by-alpha Mapping
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.04_Leffke.jpg)<br>
 <br>

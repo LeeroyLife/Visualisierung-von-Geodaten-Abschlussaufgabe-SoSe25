@@ -116,9 +116,14 @@ Ein Nachteil der Punktrasterkarte ist, dass die einzelnen Punkte keine echten St
 <br>
 **Arbeitsschritte**<br>
 <br>
+
 **Vorteile der Methode**<br>
 <br>
+Die Value-by-alpha Mapping-Methode bietet eine klare Möglichkeit, zwei verschiedene Datensätze auf einer Karte zu visualisieren. Durch die Kombination von Farbe und Transparenz (Alpha) lassen sich sowohl kategorielle Informationen (z. B. Parteien) als auch die Intensität dieser Kategorien (z. B. Stimmenanteile) gleichzeitig darstellen. Diese Methode ermöglicht es, starke Mehrheiten deutlich hervorzuheben, während schwächere Ergebnisse subtiler dargestellt werden, was zu einer besseren visuellen Wirkung führt. Besonders nützlich ist dies, wenn man Veränderungen oder Muster im Zeitverlauf, wie bei Wahlen, darstellen möchte. Wenn eine passende Legende verwendet wird, ist diese Darstellung für den Betrachter auch leicht verständlich, da sowohl Farbe als auch Transparenz schnell interpretiert werden können.<br>
+
 **Nachteile der Methode**<br>
+Trotz ihrer Vorteile bringt die Value-by-alpha Mapping-Methode einige Herausforderungen mit sich. Eine der größten Hürden ist, dass die Lesbarkeit der Karte bei vielen verschiedenen Farben und Transparenzgraden schnell leidet. Besonders bei einer hohen Anzahl von Parteien oder kleineren Differenzen in den Stimmenanteilen wird die Karte unübersichtlich und schwer interpretierbar. Darüber hinaus kann die Wahrnehmung der Transparenz subjektiv sein: Unterschiedliche Betrachter nehmen die Deckkraft von Farben unterschiedlich stark wahr, was zu einer fehlerhaften Interpretation führen kann. Ein weiteres Problem ist, dass sich Farben optisch mischen können, wenn sie zu transparent sind, was die Unterscheidung der Kategorien erschwert. Schließlich ist die Methode auch stark von der Hintergrundfarbe abhängig, bei ungünstigen Hintergrundfarben (z. B. dunkle Farben) kann die Transparenz verzerrt wirken, was die visuelle Klarheit beeinträchtigt.
+
 ## EP.05 Tilemaps
 
 ## EP.06 Flowmaps

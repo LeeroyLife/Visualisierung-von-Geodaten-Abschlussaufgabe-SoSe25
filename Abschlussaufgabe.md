@@ -115,13 +115,36 @@ Ein Nachteil der Punktrasterkarte ist, dass die einzelnen Punkte keine echten St
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.04_Leffke.jpg)<br>
 <br>
 **Arbeitsschritte**<br>
-<br>
+1. Datenbeschaffung<br>
+•	Wahlkreis-Shapefile und die Zweitstimmenergebnisse (2021, 2025) von der Bundeswahlleiterin herunterladen<br>
+2. Datenaufbereitung<br>
+•	In Excel alle irrelevanten Spalten entfernen nur die Zweitstimmen der Parteien SPD, CDU/CSU, Grüne, Linke und AfD behalten<br>
+•	CSU-Werte in Bayern zur CDU zusammenfassen und als CSV abspeichern<br>
+3. Datenimport in QGIS<br>
+•	Shapefile und die CSV in QGIS importieren<br>
+•	Sicherstellen, dass die Wahlkreisnummer korrekt definiert und das richtige Trennzeichen gewählt ist<br>
+4. Verknüpfung der Daten<br>
+•	Join -> CSV mit dem Shapefile über die Wahlkreisnummer<br>
+5. Attributberechnung<br>
+Erzeuge neue Felder:<br>
+•	g_value (Stimmenzahl der Gewinnerpartei) array_max( array( "SPD" , "CDU" , "Gruenen" , "AFD" , "Linke"))<br>
+•	g_name (Name der Gewinnerpartei - ) with_variable( 'maxVal', array_max( array( "SPD" , "CDU" , "Gruenen" , "AFD" , "Linke")), CASE WHEN "SPD" = @maxVal THEN 'SPD' WHEN "CDU" = @maxVal THEN 'CDU' WHEN "Gruenen" = @maxVal THEN 'Gruenen' WHEN "AFD" = @maxVal THEN 'AFD' WHEN "Linke" = @maxVal THEN 'Linke' END)<br>
+•	g_proz_gueltig (Anteil an gültigen Stimmen) "G_value" / "gueltig" *100<br>
+6. Symbolisierung<br>
+Regelbasierte Darstellung für jede Partei erstellen:<br>
+•	 z.B. Regel: „g_name“ = ‚SPD‘ und Beschriftung: ‚SPD‘<br>
+Alpha-Regel hinzufügen, um die Transparenz je nach g_proz_gueltig zu steuern:<br>
+•	set_color_part('black', 'alpha', scale_linear("g_proz_gueltig", 19, 47, 255, 0))<br>
+7. Finalisieren<br>
+•	 Darstellung überprüfen und Farben/Transparenz anpassen<br>
+•	 Legende, Maßstab, Nordpfeil und Quellenangabe hinzufügen<br>
 
 **Vorteile der Methode**<br>
 <br>
 Die Value-by-alpha Mapping-Methode bietet eine klare Möglichkeit, zwei verschiedene Datensätze auf einer Karte zu visualisieren. Durch die Kombination von Farbe und Transparenz (Alpha) lassen sich sowohl kategorielle Informationen (z. B. Parteien) als auch die Intensität dieser Kategorien (z. B. Stimmenanteile) gleichzeitig darstellen. Diese Methode ermöglicht es, starke Mehrheiten deutlich hervorzuheben, während schwächere Ergebnisse subtiler dargestellt werden, was zu einer besseren visuellen Wirkung führt. Besonders nützlich ist dies, wenn man Veränderungen oder Muster im Zeitverlauf, wie bei Wahlen, darstellen möchte. Wenn eine passende Legende verwendet wird, ist diese Darstellung für den Betrachter auch leicht verständlich, da sowohl Farbe als auch Transparenz schnell interpretiert werden können.<br>
 
 **Nachteile der Methode**<br>
+
 Trotz ihrer Vorteile bringt die Value-by-alpha Mapping-Methode einige Herausforderungen mit sich. Eine der größten Hürden ist, dass die Lesbarkeit der Karte bei vielen verschiedenen Farben und Transparenzgraden schnell leidet. Besonders bei einer hohen Anzahl von Parteien oder kleineren Differenzen in den Stimmenanteilen wird die Karte unübersichtlich und schwer interpretierbar. Darüber hinaus kann die Wahrnehmung der Transparenz subjektiv sein: Unterschiedliche Betrachter nehmen die Deckkraft von Farben unterschiedlich stark wahr, was zu einer fehlerhaften Interpretation führen kann. Ein weiteres Problem ist, dass sich Farben optisch mischen können, wenn sie zu transparent sind, was die Unterscheidung der Kategorien erschwert. Schließlich ist die Methode auch stark von der Hintergrundfarbe abhängig, bei ungünstigen Hintergrundfarben (z. B. dunkle Farben) kann die Transparenz verzerrt wirken, was die visuelle Klarheit beeinträchtigt.
 
 ## EP.05 Tilemaps

@@ -30,8 +30,7 @@ Kontakt: lele5111@bht-berlin.de<br>
 •	CSV in Excel aufräumen (Spalten, Zahlenformate)<br>
 •	In QGIS laden und CSV mit Shapefile verknüpfen (Join über PLR-Nummer)<br>
 3. Einfache Choroplethenkarte<br>
-•	Bevölkerungsdichte berechnen:<br>
-Einwohner / ($area / 10000)<br>
+•	Bevölkerungsdichte berechnen: Einwohner / ($area / 10000)<br>
 •	Jenks-Klassifizierung (5 Klassen), Farbschema wählen<br>
 4. Dasymetrische Karte erstellen<br>
 •	CLC-Daten filtern: Nur bebaute Flächen (Codes 111 + 112)<br>

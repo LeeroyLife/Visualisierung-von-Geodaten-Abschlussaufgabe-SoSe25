@@ -153,26 +153,101 @@ Trotz ihrer Vorteile bringt die Value-by-alpha Mapping-Methode einige Herausford
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.06.png)<br>
 <br>
 **Arbeitsschritte**<br>
-<br>
+
+1.	Datenbeschaffung<br> 
+•	Flüchtlingszahlen vom UNHCR sowie Landesgrenzen von Natural Earth herunterladen<br>
+2.	Datenaufbereitung<br>
+•	Die Flüchtlingszahlen in einer Pivot-Tabelle aggregieren (nach Zielland und Jahr) und als CSV exportieren<br>
+3.	 Import in QGIS<br>
+•	CSV-Datei und Länder Geometrien in QGIS laden und CSV als textbasierter Layer ohne Geometrie einbinden<br>
+4.	 Zentroid-Berechnung<br>
+•	Mittelpunkte aller Länder erzeugen, bei Bedarf manuell korrigieren<br>
+5.	Koordinaten-Felder<br>
+•	Für die Zielorte sowie den StartpunktX-/Y-Koordinaten in der Attributtabelle anlegen<br>
+6.	Linienerzeugung<br>
+•	Mit dem Tool "XY to Line" Linien vom Startpunkt zu den Zielzentroiden erzeugen<br>
+7.	Projektion<br>
+•	Eigene orthografische Projektion definieren:<br>
+•	+proj=ortho +lat_0=50.3 +lon_0=30.3 +x_0=0 +y_0=0 +a=6371000 +b=6371000 +units=m +no_defs<br>
+8.	 Symbolisierung<br>
+•	Linienbreite nach Flüchtlingszahl gestaffelt (5 Klassen)<br>
+•	Ukraine als auffälliger, roter Startpunkt dargestellt<br>
+•	Hintergrund als Globus mit dunklem Ozean und leuchtendem Rand<br>
+•	Legende, Maßstab, Nordpfeil und Quellenangabe hinzugefügt<br>
+
 **Vorteile der Methode**<br>
-<br>
+
+Die Flow Map-Methode bietet eine sehr anschauliche Möglichkeit, Bewegungen – wie in diesem Fall die ukrainische Flüchtlingsbewegung von 2022 bis 2024 – geografisch darzustellen. Besonders hilfreich ist die visuelle Verknüpfung zwischen Ausgangs- und Zielregionen, wodurch die Bewegungsrichtungen sofort erkennbar werden. Die Nutzung unterschiedlich dicker Linien zur Darstellung der Flüchtlingszahlen ermöglicht zudem eine schnelle Einschätzung des Umfangs der Bewegung. Dadurch lassen sich verschiedene Zielländer direkt miteinander vergleichen. Der räumliche Kontext wird klar vermittelt, da die Daten auf einer realen Weltkarte eingebettet sind. Diese Form der Darstellung ist außerdem visuell ansprechend und eignet sich gut für Präsentationen, Berichte oder zur Informationsvermittlung an ein breiteres Publikum.<br>
+
 **Nachteile der Methode**<br>
+
+Trotz ihrer Vorteile bringt die Flow Map-Methode auch einige Einschränkungen mit sich. Bei einer großen Anzahl von Zielregionen kann es schnell zu einer Überlagerung der Linien kommen, was die Lesbarkeit und Übersichtlichkeit der Karte deutlich beeinträchtigt – besonders in dicht besiedelten Regionen wie Europa. Außerdem dominieren sehr große Flüchtlingsströme (wie in diesem Fall nach Russland) das Bild stark, wodurch kleinere, aber dennoch relevante Bewegungen visuell in den Hintergrund treten. Die Methode bietet zudem keine Informationen über Ursachen, Zeitverläufe oder Dynamiken der Fluchtbewegungen – sie zeigt lediglich die Richtung und die Menge. Ein weiterer Nachteil besteht in der gewählten Kartenprojektion, die zu Verzerrungen in der Größen- und Entfernungswahrnehmung führen kann. Gerade kleine Länder oder weniger prominente Regionen sind auf solchen Karten häufig schwer zu erkennen, was zur Unschärfe in der Interpretation führen kann.<br>
+
 ## EP.07 Mesh-Daten
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.07.gif)<br>
 <br>
 **Arbeitsschritte**<br>
-<br>
+
+1.	Datenbeschaffung<br>
+•	Download der GRIB-Daten für Wind (10 m u- & v-Komponenten) vom 19. Januar 2007 über Copernicus<br>
+•	Zusätzlich werden Verwaltungsgrenzen Europas von Natural Earth geladen<br>
+2.	Import in QGIS<br>
+•	Die GRIB-Datei per Drag & Drop in QGIS laden<br>
+•	Die Mesh-Daten erscheinen automatisch mit Zeitstempel<br>
+3.	Symbolisierung<br>
+•	Windgeschwindigkeit als Farbflächen (z. B. violett → orange) darstellen<br>
+•	Windrichtung über Pfeile (Vektoren) visualisieren<br>
+•	Farbschema und Pfeilstil anpassen<br>
+4.	Zeitsteuerung aktivieren und anzeigen<br>
+•	In den Layer-Eigenschaften den Mesh-Layer als „zeitlich“ markieren<br>
+•	Zeitsteuerungs-Panel aktivieren, um die zeitbasierte Animation zu ermöglichen<br>
+•	Einen transparenten Punkt-Layer anlegen, der die Zeitangabe als Beschriftung enthält. Ausdruck:<br>
+format_date(@map_start_time, 'd. MMMM yyyy') || '\n' || format_date(@map_start_time, 'HH:mm')<br>
+5.	Kartenlayout vorbereiten<br>
+•	In Ansicht → Dekorationen <br>
+•	Titel, Maßstab, Legende, Farbskala für Windgeschwindigkeit hinzufügen<br> 
+6.	Export der Animation und GIF-Erstellung<br>
+•	Die Zeitsteuerung im QGIS aktivieren und die Animation abspielen lassen. Mit dem Uhr-Werkzeug einzelne Frames als PNG exportieren<br>
+•	Die PNG-Bildserie mit GIMP zu einer animierten GIF-Datei zusammenfügen<br>
+
 **Vorteile der Methode**<br>
-<br>
+
+Die Visualisierung von Mesh-Daten bietet eine anschauliche Möglichkeit, Wetterphänomene wie Sturm Kyrill dynamisch darzustellen. Durch die Animation wird der zeitliche Verlauf von Windrichtung und -geschwindigkeit gut nachvollziehbar. Farbverläufe und Richtungspfeile sorgen für eine intuitive Lesbarkeit, auch ohne tieferes Fachwissen. Die Einblendung von Datum und Uhrzeit unterstützt zusätzlich das Verständnis der Abläufe. Insgesamt entsteht eine visuell ansprechende Darstellung, die sich gut für Präsentationen und die Vermittlung komplexer Informationen eignet.<br>
+
 **Nachteile der Methode**<br>
+
+Allerdings bringt die Methode auch einige Einschränkungen mit sich. Exakte Zahlenwerte sind in der Animation meist nicht direkt ablesbar, und eine gut lesbare Legende lässt sich nur schwer integrieren. Da GIFs weder pausiert noch zurückgespult werden können, ist eine gezielte Analyse erschwert. Zudem erfolgt die Erstellung der Animation außerhalb von QGIS mit externen Tools, was den Aufwand erhöht. Die resultierenden Dateien können durch hohe Auflösung und viele Frames sehr groß werden, was ihre Nutzung auf Onlineplattformen einschränken kann.<br>
+
 ## EP.08 Animationen in QGIS
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.08_Leffke_meteor%20shower.png)<br>
 <br>
 **Arbeitsschritte**<br>
-<br>
+
+1.	Datenbeschaffung<br>
+•	Meteordaten als CSV-Datei von einer öffentlichen Quelle (z. B. Meteor-Map) herunterladen<br>
+2.	Datenaufbereitung<br>
+•	Die Zeitstempel in den Daten müssen im richtigen Format für QGIS konvertiert werden, um später die zeitliche Animation korrekt anzuzeigen<br>
+•	Für eine statische Darstellung können die Daten als CSV in QGIS geladen werden<br>
+3.	Geometrieerzeugung<br>
+•	Mit dem „Geometrie nach Ausdruck“-Werkzeug eine Linie für jede Meteorspur erzeugen (indem die Start- und Endkoordinaten der Meteoriten miteinander verbunden werden)<br> 
+•	Ausdruck:<br> 
+make_line($geometry, make_point("LonEnd", "LatEnd"))<br>
+4.	Hintergrund<br>
+•	Einen passenden Hintergrund auswählen, z. B. eine ESRI-Background-Map (um die Visualisierung auf einer realistischen Karte darzustellen)<br>
+5.	Symbolisierung<br>
+•	Die Meteoriten als „Meteoritenschweife“ visualisieren (interpolierte Linie mit einem Farbverlauf)<br>
+6.	Kartenlayout<br>
+•	Titel, Maßstab, Quellenangabe hinzufügen<br>
+•	Das finale Layout im gewünschten Maßstab exportieren, z. B. als PNG mit einer Auflösung von 1080x1080px<br>
+
 **Vorteile der Methode**<br>
-<br>
+
+Die Visualisierung der Meteorschauer in QGIS ist intuitiv und ermöglicht es, die Bewegungen der Meteoriten schnell zu verstehen. Das Verfahren ist einfach, erfordert keine komplexen Tools und liefert dennoch ein ansprechendes Ergebnis. Der Farbverlauf und die Linienbewegung werden leicht mit einer dynamischen Bewegung assoziiert, auch ohne dass eine echte Animation nötig ist.<br>
+
 **Nachteile der Methode**<br>
+
+Ein Nachteil dieser Methode ist, dass der zeitliche Verlauf des Ereignisses durch die Animation verloren gehen kann, was die Detailanalyse erschwert. Bei vielen Meteoriten auf einmal kann die Karte schnell unübersichtlich werden. Außerdem können unregelmäßig verteilte Datenpunkte zu Clustern führen, die die Karte überfrachten. Zudem haben die Daten keinen hohen Informationswert, da sie auf zufälligen Beobachtungen basieren, was die Methode eher ästhetisch als analytisch macht.<br>
+
 ## EP.09 3D-Gebäudemodelle
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.09_Leffke.png)<br>
 <br>

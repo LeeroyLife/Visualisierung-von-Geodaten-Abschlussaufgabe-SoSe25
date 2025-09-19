@@ -252,7 +252,28 @@ Ein Nachteil dieser Methode ist, dass der zeitliche Verlauf des Ereignisses durc
 ![image](https://github.com/LeeroyLife/Visualisierung-von-Geodaten-Abschlussaufgabe-SoSe25/blob/main/Fertig/EP.09_Leffke.png)<br>
 <br>
 **Arbeitsschritte**<br>
-<br>
+
+1.	Datenquelle<br>
+•	3D-Gebäudedaten von der Webseite www.geodaten.sachsen.de herunterladen und in QGIS importieren<br>
+2.	Symbolisierung aktivieren<br>
+•	In den Layereigenschaften den Stil 2.5D auswählen<br> 
+•	Für das Höhenattribut einen passenden Wert aus dem Datensatz (z. B. Gebäudehöhe) einstellen<br> 
+•	Dächer und Wände werden dabei mit verschiedenen Füllungen dargestellt<br>
+3.	Farbgestaltung<br>
+•	Unter „Einzelsymbol“ die Füllungen anpassen<br> 
+•	Farbverläufe oder unterschiedliche Farben können für verschiedene Gebäudetypen vergeben werden<br>
+•	So entsteht eine klare visuelle Differenzierung<br>
+4.	3D-Ansicht vorbereiten<br>
+•	Im Reiter 3D Ansicht zusätzliche Parameter einstellen (z. B. Offset für korrekte Höhenwerte)<br> 
+5.	Interaktive Erkundung<br>
+•	Über Ansicht → 3D-Kartenansicht:<br> 
+•	Perspektive frei ändern (Zoom, Neigung, Drehung), sodass die Gebäudestruktur besser erfasst werden kann<br>
+•	Die Ansicht kann hier auch gespeichert werden<br>
+
 **Vorteile der Methode**<br>
-<br>
+
+Das 2.5D-Gebäudemodell von Dresden hat einige Vorteile. Es zeigt die Gebäudehöhen auf anschauliche Weise und macht so die Stadtstruktur leicht verständlich. Dadurch kann man schnell Unterschiede zwischen niedrigen und hohen Gebäuden erkennen. Die Methode ist außerdem einfacher zu erstellen als ein richtiges 3D-Modell und bleibt übersichtlicher. Besonders für Stadtplanung oder um Bebauungsdichten darzustellen ist sie gut geeignet.<br>
+
 **Nachteile der Methode**<br>
+
+Es gibt aber auch Nachteile. Die Gebäude sind nur grob dargestellt, Dachformen oder Fassadendetails fehlen. Da es sich nicht um echtes 3D handelt, ist der Blickwinkel festgelegt und man kann nicht durch die Stadt „navigieren“. Teilweise wirken Gebäude auch verzerrt oder verdecken sich gegenseitig. Zudem hängt die Qualität stark von den zugrunde liegenden Daten ab.
